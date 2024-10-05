@@ -1,0 +1,11 @@
+First, let's create an array:
+
+NAMES=(lucas vic jose laura)
+
+To iterate over items, we use the for loop. Its structure is as follows:
+
+for item in "${NAMES[@]}"; do echo "My name is $item"; done
+
+The output will be each name that is in the array.
+
+
