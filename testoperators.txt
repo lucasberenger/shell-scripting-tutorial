@@ -1,0 +1,22 @@
+# We can ask to bash if some expression is true or not.
+# The equal sign (=) is used to compare strings.
+[ hello = hello ]
+echo $?
+
+# This should print an output equal to 0, as  both strings are the same.
+
+[ hello = bye ]
+echo $?
+
+# Now the output should be 1, as the strings are different.
+
+
+# Surely we can also use the test operators with numbers, but the difference isthat we use the '-eq' to compare numbers. If we do it the way we did above, we arenot comparing numbers but strings!!!
+
+[ 1 -eq 1 ]
+echo $?
+
+[ 1 -eq 0 ]
+echo $?
+
+

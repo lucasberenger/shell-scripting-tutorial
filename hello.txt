@@ -1,0 +1,3 @@
+Hello World!
+Hello, Lucas
+This text file was created using the command echo Hello World > hello.txt, thenusing echo Hello, Lucas >> hello.txt
