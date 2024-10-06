@@ -1,0 +1,19 @@
+The sed command is used to change some values in a text file.
+
+Let's have a look in an example.
+
+We need to create a text file with some content into it.
+
+echo The fly flies like no fly flies > sedexample.txt 
+
+Now we can use the command sed to replace some values.
+
+sed 's/fly/horse/g' sedexample.txt 
+
+The syntax is simple. The 's' stands for substitute mode, as we want to replace the word "fly." After the first slash, we write the word we want to replace. Then, we need to write the replacement word after the second slash. The 'g' means globally, so all occurrences of the word "fly" in the file will be replaced.
+
+If we want to keep a backup file with the original content, we can use the flag '-i.<SOMENAME>'.
+
+sed -i.ORIGINAL '/s/fly/horse/g' sedexample.txt 
+
+This command will create a backup file before the changes are applied.
