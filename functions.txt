@@ -13,4 +13,11 @@ showmyname(){
 }
 showmyname
 
-This function is gonna print in terminal the value of the variable name. We just set it local to not overwrite a global one with the same name. 
+This function is going to print the value of the variable name in the terminal. 
+We just set it local to not overwrite a global one with the same name. 
+
+Also is possible to create a function that will require a post argument to work correctly:
+
+anothername(){
+	echo Hello $1
+}
