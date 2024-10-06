@@ -1,0 +1,17 @@
+The awk command is a powerful text processing and data analysis tool in Unix/Linux systems. It's often used to manipulate and format text, as well as to perform operations on lines and columns of text files. 
+
+The default mode of awk is using a space character as separator. Wecan print any item of a file using it. Let's create a file and see how it works.
+
+echo one two three > awk.txt
+
+awk '{print $1}' awk.txt 
+
+The output should be the word one.
+
+We also can use awk using to get values separate by a comma: 
+
+echo one, two, three > awk-comma.txt
+
+awk -F, '{print $1}'
+
+This command should print the value 'one' the terminal

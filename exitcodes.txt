@@ -1,0 +1,18 @@
+Exit codes are the values that a if statement could return in a function. 
+
+For instance, let's use the function we created before:
+
+somefuncname(){
+	echo Hello $1
+	if [ ${1,,} = Lucas ]; then
+		return 0
+	else 
+		return 1
+	fi
+
+somefuncname $1
+if [ $? = 1 ]; then
+	echo "Someone unknown called the function!/"
+fi
+
+
