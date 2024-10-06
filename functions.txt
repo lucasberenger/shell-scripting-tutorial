@@ -1,0 +1,16 @@
+The basic syntax to create a function is:
+
+nameofthefun(){
+	do something
+}
+
+Let's create a function to use as example.
+
+
+showmyname(){
+	local myname="Lucas"
+	echo $name
+}
+showmyname
+
+This function is gonna print in terminal the value of the variable name. We just set it local to not overwrite a global one with the same name. 
